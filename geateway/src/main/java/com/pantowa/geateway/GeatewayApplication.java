@@ -1,15 +1,15 @@
-package com.pantowa.departmentservice;
+package com.pantowa.geateway;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
-@EnableEurekaClient
 @SpringBootApplication
-public class DepartmentserviceApplication {
+@EnableEurekaClient
+public class GeatewayApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(DepartmentserviceApplication.class, args);
+        SpringApplication.run(GeatewayApplication.class, args);
     }
 
 }
