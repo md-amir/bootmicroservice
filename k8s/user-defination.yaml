@@ -5,7 +5,7 @@ metadata:
   labels:
     app: user-app
 spec:
-  replicas: 3
+  replicas: 2
   selector:
     matchLabels:
       app: user-app
@@ -18,9 +18,5 @@ spec:
         - name: user-app
           image: amirdoc/user-service:latest
           imagePullPolicy: Always
-          resources:
-            limits:
-              memory: "128Mi"
-              cpu: "500m"
           ports:
             - containerPort: 9001
