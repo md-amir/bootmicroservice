@@ -23,5 +23,5 @@ spec:
             - name: EUREKA_SERVER_ADDRESS
               valueFrom:
                 configMapKeyRef:
-                  key: ereka_service_address
+                  key: eureka_service_address
                   name: eureka-cm
