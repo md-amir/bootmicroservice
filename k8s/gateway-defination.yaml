@@ -19,4 +19,4 @@ spec:
           image: amirdoc/gateway-service:latest
           imagePullPolicy: Always
           ports:
-            - containerPort: 9999
+            - containerPort: 9000
