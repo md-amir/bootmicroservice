@@ -19,7 +19,7 @@ public class UserService {
     private RestTemplate restTemplate;
 
     public User save(User user) {
-      log.info("inside service save method of userservice");
+        log.info("inside service save method of userservice");
         return userRepository.save(user);
     }
 
@@ -27,7 +27,8 @@ public class UserService {
         log.info("inside getUserWithDepartment of userservice");
         ResponseTemplate responseTemplate = new ResponseTemplate();
         User user = userRepository.findByUserId(id);
-        Depertment depertment = restTemplate.getForObject("http://DEPARTMENT-SERVICE/departments/" + id,Depertment.class);
+        Depertment depertment = restTemplate
+                .getForObject("http://192.168.0.100:31000/department-service/departments/" + id, Depertment.class);
         responseTemplate.setUser(user);
         responseTemplate.setDepertment(depertment);
         return responseTemplate;
