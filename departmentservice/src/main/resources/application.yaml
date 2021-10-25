@@ -3,6 +3,7 @@ server:
 spring:
   application:
     name: department-service
+
 eureka:
   instance:
     hostname: eureka-0
@@ -12,13 +13,3 @@ eureka:
     fetch-registry: true
     service-url:
       defaultZone: http://eureka-0.eureka.default.svc.cluster.local:8761/eureka
-
-#eureka:
-#  client:
-#    fetch-registry: true
-#    register-with-eureka: true
-#    service-url:
-#      defaultZone: http://localhost:8761/eureka/
-#  instance:
-#    hostname: localhost
-
