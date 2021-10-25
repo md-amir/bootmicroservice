@@ -28,7 +28,7 @@ public class UserService {
         ResponseTemplate responseTemplate = new ResponseTemplate();
         User user = userRepository.findByUserId(id);
         Depertment depertment = restTemplate
-                .getForObject("http://192.168.0.100:31000/department-service/departments/" + id, Depertment.class);
+                .getForObject("http://DEPARTMENT-SERVICE/departments/" + id, Depertment.class);
         responseTemplate.setUser(user);
         responseTemplate.setDepertment(depertment);
         return responseTemplate;
