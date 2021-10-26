@@ -13,7 +13,5 @@ spec:
       targetPort: 9000
       nodePort: 31000
       protocol: TCP
-status:
-  loadBalancer:
-    ingress:
-      - ip: 192.168.0.130
+externalIPs:
+  - 192.168.0.10
