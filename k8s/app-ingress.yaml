@@ -9,13 +9,15 @@ spec:
     - host: pantowa.com
       http:
         paths:
-          - path: "/user"
+          - pathType: Prefix
+            path: "/user"
             backend:
               service:
                 name: user-service
                 port:
                   number: 80
-          - path: "/department"
+          - pathType: Prefix
+            path: "/department"
             backend:
               service:
                 name: department-service
