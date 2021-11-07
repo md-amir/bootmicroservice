@@ -2,8 +2,10 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: app-gress
+  namespace: ingress-nginx
   labels:
     name: app-ingress
+
 spec:
   rules:
     - host: pantowa.com
